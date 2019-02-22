@@ -6,16 +6,16 @@ int main()
   int x,y;
   int a,b;
   printf("enter the values to be swapped in first function");
-  scanf("%d",&x);
-  scanf("%d",&y);
+  scanf("%d%d",&x,&y);
+  
   printf("enter the values to be swapped in second function");
+  scanf("%d%d",&a,&b);
 
-  scanf("%d",&a);
-  scanf("%d",&b);
   swap_no1(&x,&y);
   swap_no2(&a,&b);
-  printf("values after swapping:\n%d\n%d",x,y);
-   printf("values after swapping:\n%d\n%d",a,b);
+  
+  printf("values after swapping using first function:\n%d\n%d",x,y);
+   printf("values after swapping using second function:\n%d\n%d",a,b);
   return 0;
 }
 
