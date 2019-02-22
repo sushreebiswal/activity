@@ -4,8 +4,7 @@ int main()
 {
   int x,y;
   printf("enter the values to be swapped");
-  scanf("%d",&x);
-  scanf("%d",&y);
+  scanf("%d%d",&x,&y);
   swap_no(&x,&y);
   printf("values after swapping:\n%d\n%d",x,y);
   return 0;
